@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A little something, just for you</title>
+<meta name="theme-color" content="#FFF8F0">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="locked">
+
+<!-- OPENING -->
+<section id="opening" class="opening" aria-labelledby="opening-title">
+  <div class="petals" data-count="12" aria-hidden="true"></div>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="opening-inner">
+    <p class="hand eyebrow">A little something from my heart</p>
+    <h1 id="opening-title">For the girl who makes ordinary moments feel magical.</h1>
+    <p class="lead">I made something just for you. Take a little journey with me?</p>
+    <button type="button" id="openBtn" class="btn btn-primary">Open your little surprise ♡</button>
+  </div>
+</section>
+
+<!-- STORY -->
+<div id="story" class="story" hidden>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <div class="petals fixed" data-count="9" aria-hidden="true"></div>
+
+  <main>
+    <!-- B: our little world -->
+    <section class="section world reveal" aria-labelledby="world-title">
+      <div class="world-grid">
+        <div class="world-text">
+          <h2 id="world-title">Some moments become memories. Some people become home.</h2>
+          <p class="lead">Out of all the ordinary days, somehow, the little moments with you became my favourites.</p>
+          <p class="hand hint">tap a photo to look closer</p>
+        </div>
+        <div class="collage">
+          <button type="button" class="tile t-portrait" data-photo="portrait" aria-label="Open photo: the two of you at the café">
+            <img src="assets/images/couple-portrait-1.jpeg" width="1080" height="1920" alt="The two of you at a sunlit outdoor café: she rests her chin on her hand and smiles while he sits close in the foreground.">
+          </button>
+          <button type="button" class="tile t-playful" data-photo="playful" aria-label="Open photo: the playful wink">
+            <img src="assets/images/couple-playful.jpeg" width="1080" height="1920" loading="lazy" alt="A playful selfie: she winks and blows a little kiss while he looks on beside her.">
+          </button>
+          <button type="button" class="tile t-selfie1" data-photo="selfie1" aria-label="Open photo: close selfie">
+            <img src="assets/images/couple-selfie-1.jpeg" width="1080" height="1920" loading="lazy" alt="A close selfie of the two of you: she smiles at the camera with him just behind her shoulder.">
+          </button>
+          <button type="button" class="tile t-selfie2" data-photo="selfie2" aria-label="Open photo: selfie under the roof">
+            <img src="assets/images/couple-selfie-2.jpeg" width="1080" height="1920" loading="lazy" alt="A selfie of the two of you under a shaded roof: he is in front and she smiles warmly just behind him.">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- C: reasons -->
+    <section class="section reasons" aria-label="Little notes">
+      <ul>
+        <li class="note n1 reveal">Your smile has a way of making a difficult day feel lighter.</li>
+        <li class="note n2 reveal">I love how even the simplest moments become stories worth remembering.</li>
+        <li class="note n3 reveal">Somehow, being around you makes the world feel a little softer.</li>
+        <li class="note n4 reveal">And if I could choose one thing again, it would be getting to know you.</li>
+      </ul>
+    </section>
+
+    <!-- D: memory -->
+    <section class="memory" aria-label="A photo that feels like a memory">
+      <div class="memory-media"><img id="memoryImg" src="assets/images/couple-portrait-1.jpeg" loading="lazy" alt="The two of you at a sunlit outdoor café, smiling."></div>
+      <div class="memory-warm" aria-hidden="true"></div>
+      <p class="memory-line">If I could keep a moment in a little glass jar, it might be one of these.</p>
+    </section>
+
+    <!-- E: letter -->
+    <section class="section letter-wrap reveal" aria-labelledby="letter-title">
+      <article class="letter">
+        <span class="letter-heart" aria-hidden="true">♥</span>
+        <h2 id="letter-title" class="hand">Hey you,</h2>
+        <p class="hand">I don't know if I say it enough, but the little moments with you mean more to me than I can easily explain.</p>
+        <p class="hand">The smiles, the conversations, the silly little things, and the memories we make have a special place in my heart.</p>
+        <p class="hand">I wanted to create something that feels a little different from an ordinary message—a tiny corner of the internet that is just for you.</p>
+        <p class="hand">So, I have one little question for you...</p>
+        <div class="center"><button type="button" id="moreBtn" class="btn btn-primary">There's one more thing ♡</button></div>
+      </article>
+    </section>
+
+    <!-- F: proposal -->
+    <section id="proposal" class="proposal" aria-labelledby="proposal-title" hidden>
+      <svg class="hills" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 300V190l180-80 150 70 200-110 220 120 160-70 290 100v180z" fill="#8E304B" opacity=".35"/>
+        <path d="M0 300V230l240-60 220 50 260-70 280 60 200-30v120z" fill="#651F35" opacity=".45"/>
+      </svg>
+      <div class="petals" data-count="10" aria-hidden="true"></div>
+
+      <div id="askView" class="proposal-inner">
+        <h2 id="proposal-title">And now, the question I've been saving...</h2>
+        <figure class="art"><img src="assets/images/ghibli-proposal.png" width="1536" height="1024" alt="A hand-painted illustration of a proposal at sunset: he kneels with a ring beneath a flowering trellis and lanterns while she covers her smile."></figure>
+        <p class="question">Will you make this story even more beautiful by being my forever?</p>
+        <div class="actions">
+          <button type="button" id="yesBtn" class="btn btn-primary btn-big">YES, A THOUSAND TIMES! ♡</button>
+          <button type="button" id="momentBtn" class="btn btn-quiet">I need a moment 🥹</button>
+        </div>
+        <p id="momentMsg" class="hand moment-msg" role="status" aria-live="polite"></p>
+      </div>
+
+      <div id="yesView" class="proposal-inner" hidden>
+        <h2 id="successTitle" tabindex="-1">You just made this little corner of the universe a whole lot brighter. ♡</h2>
+        <p class="hand success-sub">Here's to all the little moments, the big dreams, and the memories still waiting for us.</p>
+        <div class="polaroids">
+          <button type="button" data-photo="selfie1" aria-label="Open photo 1"><img src="assets/images/couple-selfie-1.jpeg" alt="Close selfie of the two of you smiling."></button>
+          <button type="button" data-photo="portrait" aria-label="Open photo 2"><img src="assets/images/couple-portrait-1.jpeg" alt="The two of you at the café."></button>
+          <button type="button" data-photo="playful" aria-label="Open photo 3"><img src="assets/images/couple-playful.jpeg" alt="The playful wink and kiss selfie."></button>
+          <button type="button" data-photo="selfie2" aria-label="Open photo 4"><img src="assets/images/couple-selfie-2.jpeg" alt="Selfie of the two of you under the shaded roof."></button>
+        </div>
+        <div class="actions">
+          <button type="button" id="replayBtn" class="btn btn-quiet">Replay the proposal</button>
+          <button type="button" id="shareBtn" class="btn btn-primary" hidden>Share</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer hand">Made with a little extra love ♡</footer>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button type="button" id="lbClose" class="lb-close" aria-label="Close photo">✕</button>
+  <img id="lbImg" src="" alt="">
+</div>
+
+<div id="burst" aria-hidden="true"></div>
+
+<!-- Optional music: set MUSIC_FILE in assets/js/script.js -->
+<audio id="bgm" loop preload="none"></audio>
+<button type="button" id="musicBtn" class="music" aria-pressed="false" aria-label="Play music" hidden>♪</button>
+
+<noscript><p style="padding:2rem;font-family:Georgia,serif">This little surprise needs JavaScript turned on in your browser.</p></noscript>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
